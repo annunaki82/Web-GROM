@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.env
+.venv/
+*.sqlite3
+
+# Flask
+instance/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/

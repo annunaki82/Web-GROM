@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Koně - Stáj GROM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #2c3e50;
+        }
+        h1 {
+            color: #34495e;
+        }
+        .horses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .horse-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+        }
+        .horse-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .horse-card h3 {
+            margin: 10px 0 5px 0;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        .horse-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seznam našich koní 🐴</h1>
+    <p>Zde budou uvedeni všichni koně, které u nás najdete.</p>
+
+    <nav>
+        <a href="/">Úvod</a> |
+        <a href="/kone">Koně</a> |
+        <a href="/kontakt">Kontakt</a>
+    </nav>
+
+    <div class="horses">
+        <div class="horse-card">
+            <img src="{{ url_for('static', filename='images/grom_7.jpg') }}" alt="Grom">
+            <h3>Grom(PL)</h3>
+            <p>Věk: 17 let</p>
+            <p>Plemeno: Polský polokrevník</p>
+        </div>
+        <div class="horse-card">
+            <img src="{{ url_for('static', filename='images/Sainte_Glace.jpg') }}" alt="Sainte Glace">
+            <h3>Sainte Glace(IRE)</h3>
+            <p>Věk: 0 let</p>
+            <p>Plemeno: A1/1</p>
+        </div>
+        <div class="horse-card">
+            <img src="{{ url_for('static', filename='images/klasika_2.jpg') }}" alt="Klasika">
+            <h3>Klasika</h3>
+            <p>Věk: 0 roky</p>
+            <p>Plemeno: A1/1</p>
+        </div>
+    </div>
+</body>
+</html>
